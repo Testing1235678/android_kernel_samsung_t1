@@ -39,30 +39,6 @@ const struct lpddr2_addressing lpddr2_jedec_addressing_table[] = {
  * timings are not available from the device data sheet.
  */
 const struct lpddr2_timings lpddr2_jedec_timings_400_mhz = {
-	.max_freq	= 533000000,
-	.RL		= 7,
-	.tRPab		= 21,
-	.tRCD		= 18,
-	.tWR		= 15,
-	.tRASmin	= 42,
-	.tRRD		= 10,
-	.tWTRx2		= 15,
-	.tXSR		= 140,
-	.tXPx2		= 15,
-	.tRFCab		= 130,
-	.tRTPx2		= 15,
-	.tCKE		= 3,
-	.tCKESR		= 15,
-	.tZQCS		= 90,
-	.tZQCL		= 360,
-	.tZQINIT	= 1000,
-	.tDQSCKMAXx2	= 11,
-	.tRASmax	= 70,
-	.tFAW		= 50
-};
-
-/* Base AC Timing values specified by JESD209-2 for 333 MHz operation */
-const struct lpddr2_timings lpddr2_jedec_timings_333_mhz = {
 	.max_freq	= 400000000,
 	.RL		= 6,
 	.tRPab		= 21,
@@ -85,10 +61,34 @@ const struct lpddr2_timings lpddr2_jedec_timings_333_mhz = {
 	.tFAW		= 50
 };
 
+/* Base AC Timing values specified by JESD209-2 for 333 MHz operation */
+const struct lpddr2_timings lpddr2_jedec_timings_333_mhz = {
+	.max_freq	= 333000000,
+	.RL		= 5,
+	.tRPab		= 21,
+	.tRCD		= 18,
+	.tWR		= 15,
+	.tRASmin	= 42,
+	.tRRD		= 10,
+	.tWTRx2		= 15,
+	.tXSR		= 140,
+	.tXPx2		= 15,
+	.tRFCab		= 130,
+	.tRTPx2		= 15,
+	.tCKE		= 3,
+	.tCKESR		= 15,
+	.tZQCS		= 90,
+	.tZQCL		= 360,
+	.tZQINIT	= 1000,
+	.tDQSCKMAXx2	= 11,
+	.tRASmax	= 70,
+	.tFAW		= 50
+};
+
 /* Base AC Timing values specified by JESD209-2 for 200 MHz operation */
 const struct lpddr2_timings lpddr2_jedec_timings_200_mhz = {
-	.max_freq	= 266000000,
-	.RL		= 4,
+	.max_freq	= 200000000,
+	.RL		= 3,
 	.tRPab		= 21,
 	.tRCD		= 18,
 	.tWR		= 15,

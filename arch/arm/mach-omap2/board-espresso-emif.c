@@ -16,8 +16,8 @@
 #include "board-espresso.h"
 
 const struct lpddr2_timings lpddr2_samsung_timings_400_mhz = {
-	.max_freq	= 533000000,
-	.RL		= 7,
+	.max_freq	= 400000000,
+	.RL		= 6,
 	.tRPab		= 21,
 	.tRCD		= 18,
 	.tWR		= 15,
@@ -39,8 +39,8 @@ const struct lpddr2_timings lpddr2_samsung_timings_400_mhz = {
 };
 
 const struct lpddr2_timings lpddr2_samsung_timings_200_mhz = {
-	.max_freq	= 266000000,
-	.RL		= 4,
+	.max_freq	= 200000000,
+	.RL		= 3,
 	.tRPab		= 21,
 	.tRCD		= 18,
 	.tWR		= 15,
